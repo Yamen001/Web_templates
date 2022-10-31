@@ -1,0 +1,279 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: rgb(253, 221, 179);
+}
+.father{
+    background-color: rgb(252, 247, 240);
+    width: 800px;
+    height: 500px;
+    margin: 30px auto;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 10% 51% 35% ;
+    gap: 20px;
+    border: 1px solid rgb(179, 179, 179);
+    box-shadow: 1px 1px 2px black;
+    border-radius: 21px;
+}
+.inside{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(63, 17, 122);
+    border-radius: 20px;
+}
+.inside .logo h3{
+    margin: 20px 10px 0 10px;
+    color: white;
+}
+.inside .logo h3 span{
+    font-weight: 90;
+}
+.container1 .inside .links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+}
+.container1 .inside .links div{
+    margin: 30px;
+    position: relative;
+}
+.container1 .inside .links div a{
+    color: white;
+    position: absolute;
+    font-size: x-large;
+    top: -11px;
+    left: -14px; 
+    width: fit-content;
+    padding-bottom: 2px;
+}
+.inside .logo2{
+    margin: 0 0 20px 0;
+}
+.inside .logo2 a i{
+    color: white;
+}
+/* /////////// */
+.container2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+
+}
+.container2 .one .one1{
+    width: 400px;
+    height: 110px;
+    padding: 30px;
+    background-color: rgb(247, 135, 7);
+    color: white;
+    border-radius: 20px;
+    box-shadow: 1px 2px 2px rgb(180, 180, 180);
+}
+.container2 .one h2{
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.container2 .one  .one1 p{
+    display: inline;
+}
+.container2 .one p{
+    margin-top: 20px;
+    display: inline-block;
+}
+.container2 .one span i{
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: larger;
+    background-color: rgb(247, 135, 7);
+    cursor: pointer;
+}
+.container2 .two{
+    padding: 10px;
+    width: 100%;
+    height: fit-content;
+    }
+.container2 .two p{
+    margin-bottom: 1px;
+    margin-left:-10px;
+}
+.container2 .two .two1 .card{
+    width: 81px;
+    display: inline-block;
+    margin: 20px;
+    border: 1px solid rgb(139, 139, 139);
+    text-align: center;
+    border-radius: 5px;
+}
+.container2 .two .two1 .card i{
+    font-size:large ;
+    font-weight: 700;
+    margin: 20px 10px 10px 10px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+.container2 .two .two1 .card p{
+    font-size: 10px;
+    margin: 10px;
+}
+.container2 .two .two1 .card1{
+    background-color: rgb(255, 250, 246);
+    border: 1px solid rgb(224, 224, 217);
+    box-shadow: 1px 1px 1px rgb(180, 180, 180);
+}
+.container2 .two .two1 .card2{
+    background-color: rgb(255, 250, 246);
+    border: 1px solid rgb(224, 224, 217);
+    box-shadow: 1px 1px 1px rgb(180, 180, 180);
+}
+.container2 .two .two1 .card3{
+    background-color: rgb(255, 250, 246);
+    border: 1px solid rgb(224, 224, 217);
+    box-shadow: 1px 1px 1px rgb(180, 180, 180);
+
+}
+
+.container2 .two .two1 .card1 i{
+    border: none;
+    color:white;
+    background-color: rgb(247, 135, 7);
+}
+.container2 .two .two1 .card2 i{
+    border-color: rgb(252, 109, 109);
+    background-color: white;
+    color: rgb(252, 109, 109);
+}
+.container2 .two .two1 .card3 i{
+    border-color: rgb(57, 231, 194);
+    background-color: white;
+    color: rgb(57, 231, 194);
+}
+.container2 .two .two1 .card:hover{
+    transform: scale(1.2);
+    transition: 1s ease;
+}
+.container2 .three{
+    padding: 10px;
+    height: fit-content;
+    width: 100%;
+    
+}
+.container2 .three p{
+    margin-bottom: 1px;
+    margin-left:-10px;
+}
+.container2 .three .three1{
+    display: flex;
+    justify-content: space-between;
+}
+.container2 .three .three1 .card{
+    width: 200px;
+    height: 60px;
+    display: inline-block;
+    margin: 20px 10px 20px 10px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgb(255, 250, 246);
+    border: 1px solid rgb(224, 224, 217);
+    box-shadow: 1px 1px 1px rgb(180, 180, 180);
+}
+.container2 .three .three1 .card p:nth-of-type(2){
+    font-size: small;
+    margin-top: 10px;
+    color: rgb(247, 135, 7);
+
+}
+.container2 .three .three1 .loading{
+    display: inline-block;
+    margin: 10px 0px 0px 0px ;
+    width: 100px;
+}
+.container2 .three .three1 .spin{ 
+    width: 30px;
+    height: 30px;
+    background-color: rgb(252, 247, 240);
+
+    padding: 10px;
+    color: white;
+    border: 5px dotted black;
+    border-left-color:white;
+    border-radius: 50%;
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.span:hover{
+    animation-play-state:initial;
+}
+@keyframes spin {
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+/* /////////////////// */
+.father .container3 .winner{
+    width: 96%;
+    height: 80%;
+    background-image: url(../imgs/portfolio1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(0.5);
+}
+.father .container3 .winner:hover{
+    filter: none;
+}
+
+.father .container3 .week{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    margin: -11px 10px 5px -10px;
+}
+.father .container3 .week div{
+    border: 1px solid #000000;
+    padding: 10px;
+    border-radius: 21px;
+    box-shadow: 2px 2px 1px rgb(180, 180, 180);
+
+}
+.father .container3 .week div:nth-child(1){
+    background-color: rgb(252, 109, 109);
+    border-color:rgb(252, 109, 109);
+    color: white;
+}
+.father .container3 .week div:nth-child(2){
+    background-color: rgb(57, 231, 194);
+    border-color:rgb(57, 231, 194);
+    color: white;
+}
+.father .container3 .week div:nth-child(3){
+    background-color: rgb(247, 135, 7);
+    border-color:rgb(247, 135, 7);
+    color: white;
+}
+.father .container3 .week div:hover{
+    transform: scale(1.2);
+    transition: 1s ease;
+}

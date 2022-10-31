@@ -1,0 +1,692 @@
+/* start global rules */
+:root{
+    --main-color: #199b8e;
+    --lightmain-color: #4fb291;
+    --secindary-color:#2c4755;
+    --text:rgb(107, 107, 107);
+    --section-padding:60px;
+    --section-backgound:#f6f6f6;
+    --mian-transtion: 0.3s
+}
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    outline: 1px solid gold;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+    /* overflow: hidden; */
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: red; */
+}
+/* small */
+@media (min-width:768px){
+    .container{
+        width:750px;
+    
+    }
+}
+/* medium */
+@media (min-width:992px){
+    .container{
+        width:970px;
+    }
+}
+/* large */
+@media (min-width:1200px){
+    .container{
+        width:1170px;
+    }
+}
+h1 , h2 , h3{
+    margin: 0;
+}
+
+/* start of the navbar */
+nav{
+    /* background-color: red; */
+    padding: 15px 0;
+    /* border: 1px solid black; */
+    position: relative;
+}
+nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav h2{
+    color: #ccc;
+    font-size: 2rem;
+    font-weight: 500;
+}
+nav .list{
+    /* background-color: green;  */
+    position: relative;
+    height: 40px;
+    width: 50px;
+    text-align: center;
+    cursor: pointer;
+    background-color: white;
+}
+nav .list span{
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    left: 10px;
+    background-color: black;
+
+}
+nav .list span:nth-child(1){
+    top: 10px;
+}
+nav .list span:nth-child(2){
+    top: 20px;
+}
+nav .list span:nth-child(3){
+    top: 30px;
+}
+nav .list-show{
+    position: absolute;
+    top: 70px;
+    /* display: none; */
+    left: -500px;
+    transform: translateX(-50%);
+    width: 60%;
+    transition: 0.7s ease;
+    z-index:110;
+    box-shadow: 0 10px 10px #ccc;
+    background-color: white;
+}
+nav .list-show ul{
+    list-style: none;
+}
+nav .list-show li{
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+nav a{
+    display: block;
+    width: 100%;
+    padding: 8px;
+    transition: 0.5s ease;
+    font-weight: bold;
+    color: var(--secindary-color);
+}
+nav a:hover{
+    padding-left: 20px;
+}
+.landing{
+    min-height: calc(100vh - 70px);
+    /* height: 100%; */
+    /* height: 100vh; */
+    background-image: url(/imgs/landing.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+.landing .box{
+    text-align: center;
+    max-width: 700px;
+    width: 100%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 100px 0;
+    /* background-color: red; */
+}
+.landing .box h1{
+    font-size: 3.2rem;
+    color: var(--secindary-color);
+}
+.landing .box h1 span{
+    font-weight: 400;
+}
+.landing .box p{
+    line-height: 1.9;
+    font-size: 1rem;
+    color:var(--text);
+}
+.landing button{
+    margin-top: 10px;
+    padding: 15px 30px;
+    border-radius: 30px;
+    border: 3px solid var(--main-color);
+    background-color: white;
+    letter-spacing: 2px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--main-color);
+    transition: .5s ease;
+}
+.landing button:hover{
+    color: white;
+    background-color: var(--main-color);
+}
+section.one{
+    padding: 40px 0;
+}
+section.one .container .box{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
+    justify-content: center;
+    gap: 20px;
+}
+section.one .container .box .card{
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--secindary-color);
+}
+section.one img{
+    color: white;
+    background-color: white;
+    border-radius: 10px;
+    width: 80px;
+    padding: 3px;
+
+}
+section.one h2.last-icon{
+    font-size: 3rem;
+    margin: 0;
+}
+section.one h2{
+    margin: 30px 0;
+}
+section.one .card:nth-child(1) h2.last-icon,
+section.one .card:nth-child(3) h2.last-icon{
+    color: var(--main-color);
+}
+section.one p{
+    line-height: 1.5
+}
+section.one .box .card:nth-child(2){
+    background-color: var(--main-color);
+}
+section.two{
+    padding: 80px 0;
+    min-height: 90vh;
+    background-color: var(--secindary-color);
+}
+section.two .box{
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    color: white;
+    padding: 0 10px;
+}
+section.two .box h1{
+    margin:0 0 40px 0;
+    font-size: 2.5rem;
+}
+section.two .box p{
+    line-height: 2;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto 50px;
+    font-size: 1.1rem;
+}
+section.two .box::before,
+section.two .box::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    background-color: #199b8e;
+    top: 0;
+}
+section.two .box::before{
+    left: 0;
+}
+section.two .box::after{
+    right: 0;
+}
+section.two button{
+    padding:15px 20px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    background-color: var(--main-color);
+    color: white;
+    transition: .5s ease;
+}
+section.two button:hover{
+    background-color: white;
+    color: var(--main-color);
+}
+
+section.three{
+    padding: 30px 10px;
+}
+section.three .box{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
+    gap: 20px;
+}
+section.three h1{
+    text-align: center;
+    margin: 40px 0 ;
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: var(--lightmain-color);
+}
+section.three .box .card{
+    padding: 30px;
+    text-align: center;
+    border-radius: 20px;
+}
+section.three .box .card h3:nth-child(1){
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+section.three .box .card h3:nth-child(2){
+    margin: 20px 0;
+}
+section.three .box .card p{
+    line-height: 1.5;
+}
+section.three .white-ca{
+    background-color: white;
+}
+section.three .white-ca h3{
+    color: var(--secindary-color);
+}
+section.three .white-ca p{
+    color: var(--text);
+}
+section.three .green-ca{
+    background-color: var(--lightmain-color);
+    color: white;
+}
+section.three .blue-ca{
+    background-color: var(--secindary-color);
+    color: white;
+}
+
+
+section.four{
+    padding: 40px 40px;
+    text-align: center;
+    background-size: cover;
+    background-position: center top;
+    min-height: 90vh;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(0deg, rgba(36,63,86,0.85), rgba(36,63,86,0.85)), url(/imgs/sec-four.jpg);
+    color: white;
+}
+section.four p{
+    max-width: 550px;
+    margin: 30px auto;
+    width: 100%;
+}
+section.four h1{
+    font-size: 3rem;
+    font-weight: 600;
+}
+section.four .box button{
+    border: none;
+    border-radius: 20px;
+    padding: 15px 30px;
+    margin:  10px;
+    cursor: pointer;
+    transition: .7s ease;
+}
+section.four .box button.one{
+    background-color: var(--lightmain-color);
+    color: white;
+    border: 2px solid var(--lightmain-color);
+}
+section.four .box button.two{
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+section.four .box button.one:hover{
+    background-color: white;
+    color: var(--secindary-color);
+    border: 2px solid white;
+}
+section.four .box button.two:hover{
+    background-color: white;
+    color: var(--secindary-color);
+}
+section.five{
+    padding: 50px 0;
+    min-height: 80vh;
+}
+section.five .container{
+    /* background-color: red; */
+}
+section.five .box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+section.five .box .col{
+    max-width: 370px;
+    /* border: 1px solid rgb(0, 102, 255); */
+    /* text-align: center; */
+    width: 100%;
+    /* overflow: hidden; */
+}
+section.five .two{
+    display: flex;
+    align-items: center;
+}
+section.five img{
+    max-width: 110%;
+}
+section.five .col{
+    padding: 10px 20px;
+}
+section.five .box .one h1{
+    color: var(--lightmain-color);
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+section.five .box .one h4{
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: var(--text);
+}
+section.five .box .one p{
+    line-height: 1.6;
+    font-size: 1.3rem;
+    color: var(--text);
+}
+section.five .box .one button{
+    padding: 20px 40px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--lightmain-color);
+    color: white;
+    font-size: 1.4rem;
+    margin-top: 20px;
+    transition: .7s ease;
+}
+section.five .box .one button:hover{
+    background-color: var(--secindary-color);
+}
+
+section.five .box .three {
+    padding: 40px 0;
+    text-align: center;
+}
+section.five .box .three .number{
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: var(--lightmain-color);
+}
+section.five .box .three p{
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    color: var(--text);
+}
+section.five .box .three h4{
+    color: black;
+    font-size: 1.1rem;
+}
+
+
+section.six{
+    min-height: 100vh;
+    padding: 70px 20px;
+    background-image: linear-gradient(0deg, rgba(36, 63, 86, 0.726), rgba(36,63,86,0.85)), url(/imgs/3730262_73938.jpg);
+    /* background-image: url(/imgs/3730262_73938.jpg); */
+    background-size: cover;
+    background-position: center;
+}
+section.six .container {
+    /* border: 1px solid red; */
+}
+
+section.six .container .one{
+    max-width: 680px;
+    width: 100%;
+    margin-bottom: 50px;
+
+}
+section.six .container .one h1{
+    font-size: 3.7rem;
+    color: var(--lightmain-color);
+}
+section.six .container .one p{
+    color: rgb(190, 190, 190);
+    line-height: 1.6;
+    font-size: 1.2rem;
+    margin:20px 0;
+}
+section.six .container .two{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+section.six .container .two .col-left{
+    max-width: 500px;
+}
+section.six .container .two .col-left h2{
+    font-size: 1.9rem;
+    color: white;
+    font-weight: 300;
+}
+section.six .container .two .col-left h3{
+    color: white;
+    font-weight: 500;
+    margin: 30px 0;
+}
+section.six .container .two .col-right {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+    padding: 0 30px;
+    justify-content: center;
+
+}
+section.six .container .two .col-right .count{
+    font-size: 5rem;
+    font-weight: 600;
+    color: var(--lightmain-color);
+}
+section.six .container .two .col-right .mini-rigth,
+section.six .container .two .col-right .mini-left {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+section.six .container .two .col-right p{
+    color: white;
+}
+
+
+section.seven{
+    padding: 50px 0;
+    min-height: 100vh;
+}
+section.seven .container{
+    /* border: 1px solid red; */
+}
+section.seven .container h1{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+section.seven .container h1 span{
+    color: var(--lightmain-color);
+}
+section.seven .container .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 70px;
+}
+section.seven .container .row .card{
+    max-width: 320px;
+    /* border: 1px solid red; */
+    overflow: hidden;
+    text-align: center;
+}
+
+section.seven .container .row .card img{
+    width: 240px;
+    height: 240px;
+    border-radius: 20px;
+}
+section.seven .name{
+    margin: 20px 0;
+    font-size: 1.6rem;
+}
+section.seven .work{
+    color: var(--lightmain-color);
+}
+section.seven p{
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+section.seven ul{
+    display: flex;
+    /* border: 1px solid black; */
+    gap: 20px;
+    justify-content: center;
+    padding: 0;
+    font-size: 1.3rem;
+}
+section.seven ul li a{
+    color: var(--lightmain-color);
+}
+
+section.eigth{
+    padding: 70px 0;
+    min-height: 80vh;
+    background-color: var(--lightmain-color);
+    color: white;
+}
+section.eigth .container{
+    /* border: 1px solid red; */
+}
+section.eigth .container .row{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+section.eigth .container .row .col-left{
+    max-width:650px;
+    padding: 30px;
+}
+section.eigth .container .row .col-left h1{
+    font-size: 3rem;
+}
+section.eigth .container .row .col-left p {
+    font-size: 1.8rem;
+    line-height: 1.6;
+}
+section.eigth .container .row .col-left .input-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+section.eigth .container .row .col-left .input-row input {
+    padding: 20px 20px;
+    max-width: 350px;
+    width: 100%;
+    border-radius: 30px;
+    border: none;
+    font-size: 1.1rem;
+    outline: none;
+}
+section.eigth .container .row .col-left .input-row input:focus {
+    outline: none;
+}
+section.eigth .container .row .col-left .input-row input[type = "text"]::placeholder {
+    text-align: left;
+}
+section.eigth .container button{
+    border-radius: 30px;
+    max-width: 150px;
+    width: 100%;
+    padding: 20px 20px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--secindary-color);
+    border: none;
+    transition: .7s ease;
+    cursor: pointer;
+}
+section.eigth .container button:hover{
+    background-color:black;
+}
+section.eigth .container .col-left p.link{
+    font-size: 1rem;
+}
+section.eigth .container .col-left p.link a{
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: underline;
+    color: white;
+    text-underline-offset: 2px;
+}
+section.eigth .container .col-right p{
+    font-size: 1.2rem;
+    padding: 0 20px;
+}
+footer{
+    background-color: var(--secindary-color);
+    padding: 50px 20px;
+    text-align: center;
+}
+footer p{
+    color: white;
+    margin: 30px 0;
+    font-size: .9rem;
+}
+footer a{
+    color: white;
+    text-decoration: underline;
+}
+
+
+
+/* xsmall sizes */
+@media (max-width:400px) {
+    .landing .box h1{
+        font-size: 2.2rem;
+        color: var(--secindary-color);
+    }
+    .landing{
+        padding: 0;
+    }
+    section.three h1 {
+        font-size: 2.2rem;
+    }
+    section.six .container .one h1 {
+        font-size: 2.2rem;
+        color: var(--lightmain-color);
+    }
+    section.seven .container h1{
+        font-size: 2.2rem;
+    }
+    section.eigth .container .row .col-left h1 {
+        font-size: 2.2rem;
+    }
+}
