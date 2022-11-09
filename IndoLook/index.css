@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+body{
+    background-image: url(11.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* height: 100vh; */
+
+}
+.header{
+    color: white;
+    top: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: transparent;
+}
+.header h1{
+    margin: 0 100px;
+}
+#head{
+    color: #fd657e;
+    font-size: larger;
+}
+.container{
+    position: relative;
+    display: grid;
+    grid-template-columns: 10% 40% 50% ;
+    grid-template-areas: "leftside middle rightside";
+    height: 90vh;
+}
+.leftside{
+    grid-area: "leftside";
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+}
+.leftside hr{
+    height: 150px;
+    width: 4px;
+    background-color: #fd657e;
+    border: none;
+    /* display: inline; */
+}
+.leftside i{
+    font-size: x-large;
+    color: white;
+    margin: 20px 0;
+}
+.middle{
+    grid-area: "middle";
+    padding: 30px 30px 30px 50px;
+    color: white;
+}
+.middle h1{
+    font-size: 60px;
+    font-weight: bolder;
+}
+.middle h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.middle #smally{
+    width: 50px;
+    height: 1px;
+    background-color: white;
+    margin-bottom: 10px;
+}
+.middle p{
+    font-size: larger;
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+.middle input{
+    padding: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+    border: none;
+    transition-duration: 1s;
+}
+.middle input:hover{
+    background-color: #fd657e;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.rightside{
+    grid-area: "rightside";
+    padding: 20px;
+    position: relative;
+}
+.rightside .card{
+    height: 250px;
+    width: 200px;
+    background-color:rgba(255, 255, 255, 0.411);
+    position: absolute;
+    transition: 1s;
+}
+.rightside .card img{
+    width: 94%;
+    height: 94%;
+    position: absolute;
+    top: 3%;
+    left: 3%;
+}
+.rightside .card1{
+    bottom: 47px;
+}
+.rightside .card2{
+    bottom: 200px;
+    left: 241px;
+}
+.rightside .card3{
+    bottom: 47px;
+    right: 26px;
+}
+.rightside .card:hover{
+    background-color: #fd657eb5;
+    cursor: pointer;
+}
+
+
+
+
+
+
