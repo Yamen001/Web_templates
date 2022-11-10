@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*  */
+    scroll-behavior: smooth;
+}
+header{
+    background-color: #000000af;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    /*  */
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    padding: 10px 200px;
+}
+.logo{
+    text-decoration: none;
+    color: rgb(105, 219, 95);
+    font-weight: 700;
+    font-size: 1.8em;;
+    text-transform: capitalize;
+}
+.navigation a{
+    text-decoration: none;
+    color: rgb(105, 219, 95);
+    font-size: 1.1em;;
+    font-weight: 500px;
+    padding-left:30px ;
+}
+.navigation a:hover{
+    color: rgb(77, 161, 70);
+}
+/* //////////////////////////// */
+section{
+    padding: 100px 200px;
+}
+.main{ 
+    width: 100%;
+    /*  */
+    min-height: 100vh;    
+    display: flex;
+    align-items: center;
+    background: url(2.jpg)no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+/* .main .right{
+    position:absolute;
+    left: 90px;
+    background-color:rgba(159, 158, 158, 0.483) ;
+    width: 29.25em;
+    box-shadow: 5px 5px 100px rgb(1 1 1 /15%);
+    border-radius:10px ;
+    padding: 25px;
+    margin: 15px;
+
+} */
+.main h2{
+    color: black;
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 2px;
+    cursor:default;
+}
+.main h2 span{
+    display: inline-block;
+    margin-top: 2px;
+    color: black;
+    font-size: 2.2em;
+    font-weight: 700;
+    cursor:default;
+
+}
+.main h3{
+    color:black;
+    font-size:1.5em ;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    padding: 5px;
+    margin-bottom: 30px;
+    cursor:default;
+    
+
+}
+.mainbtn{
+    color: rgb(0, 0, 0);
+    background-color:rgb(77, 161, 70) ;
+    font-size: 1.1em;
+    font-weight: 800;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    box-shadow: 4px 4px 2px;
+    transition: 0.7s ease;
+}
+.mainbtn:hover{
+    background-color: rgb(48, 123, 42);
+    transform: scale(1.1);
+}
+.icons a{
+    color: rgb(0, 0, 0);
+    font-size: 1.7em;
+    padding-right: 30px;
+}
+/* /////////////////////////// */
+.title{
+    display: flex;
+    justify-content: center;
+    color:rgb(77, 161, 70) ;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.contant{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: white;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgb(1 1 1 /15%);
+    border-radius:10px ;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.icon{
+    color:rgb(105, 219, 95);
+    text-align: center;
+    font-size: 8em;
+}
+.info{
+    text-align: center;
+}
+.info h3{
+    color: rgb(105, 219, 95);
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+/* ///////////////////// */
+.news{
+    background-color:rgba(199, 209, 198, 0.7) ;
+}
+.news .contant{
+    margin-top: 30px;
+}
+.news-cards{
+    background-color: #fff;
+    border: 2px solid rgb(255, 255, 255);
+    min-height: 14em;
+    width: 20em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+    cursor: pointer;
+}
+.news-cards:hover{
+    transform: scale(1.1);
+}
+.new-image img{
+    width: 100%;
+    max-height: 217.06px;
+    min-height: 217.06px;
+}
+.news-cards:hover .new-image{
+    opacity: 0.8;
+}
+.news-info{
+    padding: 10px;
+}
+.news-catgory{
+    color:rgb(48, 123, 42);
+    font-size: 1em;
+}
+.news-title{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800px;
+    margin-top: 10px;
+}
+.moredet{
+    text-decoration: none;
+    color: rgb(48, 123, 42);
+}
+.moredet:hover{
+    color: red;
+}
+.news-cards .new-image .lastimage{
+    opacity: 0.3;
+}
+/* ////////////////// */
+.footer{
+    background-color: #000000af;
+    color:rgb(105, 219, 95);
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+.footer .icons a{
+    padding: 0 12px 0 0 ;
+    font-size: 1.3em;
+}
+.footer span{
+    color: white;
+}
+/* //////////////////// */
+
+@media(max-width:1023px){
+    header{
+        padding: 10px 20px ;
+    }
+    .navigation a{
+        padding-left: 10px;
+    }
+    .title{
+    font-size:1.8em;
+    }
+    section{
+        padding: 80px 20px;
+    }
+    .main h2{
+        font-size: 1em;
+    }
+    .main h3{
+    font-size:  1.6em;
+    }
+    .contant{
+        flex-direction: column;
+        align-items: center;
+    }
+}
