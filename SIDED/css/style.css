@@ -1,0 +1,505 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid blue; */
+}
+:root{
+    --hblue :rgb(168, 222, 255);
+    --pblue:rgb(86, 213, 255);
+    --pblack:rgb(129, 129, 129);
+}
+html{
+    font-size: 16px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+body{
+    overflow-x: hidden;
+}
+.container{
+    height:550vh;
+    background: linear-gradient(to right, rgb(123, 204, 255) 50% , rgb(255, 255, 255) 50%);
+}
+.container .one{
+    max-width:400px;
+    width: 100%;
+    position: relative;
+    margin: 0 55%;
+    top: 120px;
+    text-align: center;
+    /* background-color: red; */
+    height: 200px;
+    background-color: white;
+}
+.container .one h2{
+    font-size: 4.2rem;
+    font-weight: 500;
+    margin: 0;
+    color: var(--hblue);
+}
+.container .one p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 20px 0 40px;
+    color: var(--pblue);
+}
+.container .one hr{
+    max-width: 500px;
+    background-color: var(--pblue);
+    height: 1px;
+    border: none;
+}
+.container .two{
+    position: relative;
+    max-width: 500px;
+    top: 150px;
+    margin: 0 10%;
+    /* background-color: var(--hblue); */
+    font-size: 1.5rem;
+    color: white;
+    line-height: 1.9;
+    z-index: 11;
+}
+.container .three{
+    position: relative;
+    top: 240px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 100%;
+    width: 100%;
+    padding: 0 40px;
+    display: flex;
+}
+.container .three .left{
+    width: 50%;
+
+}
+.container .three .left img{
+    width: 100%;
+    height: 100%;
+}
+.container .three .rigth{
+    width: 50%;
+    padding: 20px 10px 20px 50px;
+}
+.container .three .rigth h2{
+    font-size: 2rem;
+    color: var(--hblue);
+    
+}
+.container .three .rigth P{
+    margin: 30px 0;
+    max-width: 500px;
+    width: 100%;
+    font-size: 1.4rem;
+    color: var(--pblack);
+}
+.container .four{
+    position: relative;
+    top: 430px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 100%;
+    width: 100%;
+    padding: 0 40px;
+    display: flex;
+}
+.container .four .left{
+    width: 50%;
+}
+.container .four .right{
+    width: 50%;
+}
+.container .four .right img{
+    width: 100%;
+    height: 100%;
+}
+.container .four .left{
+    max-width: 50%;
+    padding: 60px 60px ;
+    background-color: var(--hblue);
+}
+.container .four .left h2{
+    font-size: 2rem;
+    color: rgb(85, 85, 247);
+    
+}
+.container .four .left P{
+    margin: 30px 0;
+    max-width: 500px;
+    width: 100%;
+    font-size: 1.4rem;
+    color: black;
+}
+
+.container .five{
+    display: block;
+    position: relative;
+    top: 550px;
+    max-width: 100%;
+    width: 100%;
+    padding: 0 40px;
+    /* background-color: red; */
+}
+.container .five .row1{
+    /* background-color: yellow; */
+    text-align: right;
+}
+.container .five .row1 h1{
+    font-size:2.4rem;
+    font-weight: 500;
+}
+.container .five .row1 hr{
+    width: 400px;   
+    display: inline-block;
+    text-align: right;
+    background-color: black;
+    height: 1px;
+    border: none;
+}
+.container .five .row2{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.container .five .card{
+    position: relative;
+    width:300px;
+    height: 400px;
+    overflow: hidden;
+    background-color: rgb(231, 197, 197);
+}
+.container .five .row2 .cardcon img{
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: .2s linear;
+}
+.container .five .row2 .cardcon h3{
+    text-align: center;
+    position: relative;
+    top: 70px;
+    font-size: 1.6rem;
+    z-index: 11;
+    color: white;
+    font-weight: 100;
+    transition: .2s linear;
+}
+.container .five .row2 .cardcon h3 span{
+    font-weight: bold;
+}
+.container .five .row2 .card:hover h3{
+    font-size: 1.9rem;
+    z-index: 155;
+}
+.container .five .row2 .card:hover  img{
+    width: 105%;
+    height: 126%;
+}
+.container .five .row2 .layer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 0, 0, 0.589) , rgba(0, 0, 0, 0.568));
+    z-index: -1;
+    transition: .2s linear;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 40px 0;
+}
+.container .five .row2 .card:hover .layer{
+    z-index: 133;
+}
+.container .five .row2 .card .layer p{
+    width: 250px;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    border: 2px solid white;
+    padding: 10px;
+    opacity: 0;
+    transition: 0.6s linear;
+}
+.container .five .row2 .card:hover .layer p{
+    opacity: 1;
+}
+
+.container .six{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    top: 630px;
+    /* background-color: red; */
+}
+.container .six p{
+    max-width: 600px;
+    width: 100%;
+    position: absolute;
+    right: 40px;
+    /* background-color: yellow; */
+    font-size: 1.4rem;
+    color: rgb(134, 134, 134);
+}
+
+.container .seven{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    top: 750px;
+    /* background-color: #Aaa; */
+    padding: 0 40px;
+}
+.container .seven .card{
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 50%;
+    background-color: red;
+    transform: translateX(-50%);
+}
+.container .seven .card .left{
+    width: 50%;
+    background-color: var(--hblue);
+    padding: 60px 50px;
+}
+.container .seven .card .right{
+    width: 50%;
+    padding: 60px 50px;
+    background-color: white;
+
+}
+.container .seven .card .left i{
+    display: inline-block;
+    text-align: center;
+    line-height: 60px;
+    width: 60px;
+    height:60px;
+    border-radius: 50%;
+    font-size: 2rem;
+    margin-right: 20px;
+    background-color: white;
+    color: var(--pblue);
+}
+.container .seven .card .left p{
+    display: inline-block;
+    font-size: 1.2rem;
+    margin-bottom: 90px;
+    width: 70%;
+    font-weight: 400;
+}
+.container .seven .card .left p:last-child{
+    margin-bottom: 0;
+}
+.container .seven .card .right input{
+    display: block;
+    width: 80%;
+    margin-bottom: 30px;
+    padding: 20px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(160, 160, 160);
+    text-align: left;
+    font-size: 20px;
+}
+.container .seven .card .right textarea{
+    padding: 20px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(160, 160, 160);
+}
+.container .seven button{
+    padding: 15px 40px;
+    margin: 40px 0;
+    background-color: white;
+    font-weight: 100;
+    font-size: 1.1rem;
+    outline: none;
+    color: var(--pblack);
+    border: 1px solid rgb(160, 158, 158);
+    cursor: pointer;
+
+}
+
+
+.container .eight{
+    width: 100%;
+    max-height: 550px;
+    position: relative;
+    top: 900px;
+    /* background-color: #Aaa; */
+    padding: 0 40px;
+}
+.container .eight .card{
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    /* background-color: red; */
+    transform: translateX(-50%);
+}
+.container .eight .card .right{
+    width: 50%;
+    padding: 30px 1px 30px 60px;
+    color: var(--hblue);
+}
+.container .eight .card .right ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.container .eight .card .right ul li i{
+    width: 50px ;
+    text-align: center;
+    line-height: 60px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: var(--hblue);
+    height: 60px;
+    border: 1px solid var(--hblue);
+    border-radius: 50%;
+    transition: .6s linear;
+}
+.container .eight .card .right ul li i:hover{
+    background-color: rgb(83, 138, 255);
+    border-color: rgb(83, 138, 255);
+}
+.container .eight .card .left{
+    width: 50%;
+    padding: 30px 60px 30px 1px;
+    color: white;
+    font-size: 1.4rem;
+}
+.container .eight .left p{
+    margin-bottom: 25px;
+    color: var(--pblack);
+}
+
+@media (max-width:767px) {
+    html{
+        font-size: 12px;
+    }
+    
+    .container{
+        background:white;
+    }
+    .container .one{
+        text-align: center;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    .container .two{
+        background-color: var(--hblue);
+        text-align: center;
+        margin: 0 auto;
+        padding: 10px 20px;
+    }
+    .container .three{
+        flex-direction: column;        
+        text-align: center;
+        margin: 0 auto;
+        padding: 0px 20px;
+
+    }
+    .container .three .left{
+        width: 100%;
+    }
+    .container .three .rigth{
+        width: 100%;
+        padding: 0;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .container .three .rigth p{
+        text-align: center;
+        margin: 20px auto;
+        width: 100%;
+    }
+    .container .four{
+        padding: 0px 20px;
+        flex-direction: column;
+        height: 600px;
+
+    }
+    .container .four .left{
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+        padding: 30px 10px;
+        height: 50%;
+    }
+    .container .four .left p{
+        margin: 20px auto;
+    }
+    .container .four .right{
+        width: 100%;
+        padding: 0;
+        font-size: 1.2rem;
+        height: 50%;
+    }
+    .container .five .row1{
+        text-align: center;
+    }
+    .container .five .row1 hr{
+        width: 200px;
+    }
+    .container .six{
+        padding: 10px 20px;
+        text-align: center;
+    }
+    .container .six p{
+        right: 0;
+    }
+    .container .seven{
+        padding: 0px 20px;
+        height:170vh;
+    }
+    .container .seven .card{
+        flex-direction: column;
+
+    }
+    .container .seven .card .left{
+        width: 100%;
+        text-align: center;
+    }
+    .container .seven .card .right{
+        width: 100%;
+        text-align: center;
+    }
+    .container .eight{
+        height: 50vh;
+        padding: 0;        
+    }
+    .container .eight .card{
+        flex-direction: column;
+        padding: 0 20px;
+        height: 100%;
+        top: 0;
+    }
+    .container .eight .card .right{
+        width: 100%;
+        height: 25%;
+        text-align: center;
+        padding: 0;
+        vertical-align: middle;
+    }
+    .container .eight .card .left{
+        padding: 0;
+        width: 100%;
+        height: 70%;
+
+    }
+    .container .eight .card .left p{
+        width: 100%;
+        text-align: center;
+
+    }
+}
