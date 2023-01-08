@@ -7,21 +7,79 @@ body{
     background-color: rgba(158, 158, 0, 0.459);
 }
 .container{
-    max-width: 100%;
-    padding: 0 30px;
-    background-color: rgba(255, 0, 0, 0.582);
-    height: 200px;
+    padding: 0 15px;
+    margin:  0 auto;
+    background-color: #aaa;
+}
+/* small */
+@media (min-width: 768px) {
+    .container{
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px) {
+    .container{
+        width: 970px;
+    }
+}
+/* large */
+@media (min-width: 1200px) {
+    .container{
+        width: 1180px;
+    }
+}
+
+
+/* start of landing */
+.landing{
+    min-height: 100vh;
+    height: 100%;
+    background-color: yellow;
+}
+.landing .container{
+    min-height: 100vh;
+    height: 100%;
+    background-color: purple;
 }
 .cards{
-    display: flex;
-    flex-wrap: wrap;
+    /* grid-template-columns: repeat(auto-fill, minmax(200px ,300px));  */
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    background-color: grey;
+    position: relative;
 
 }
-.card{
-    max-width: 400px;
+.back-card{
+    /* max-width: 400px; */
+    /* width: 100%; */
+    max-width: 500px;
     width: 100%;
-    height: 100px;
+    height: 300px;
+    position:absolute;
+    right: 0px;
     background-color: white;
+    border: 1px solid black;
+}
+.mid-card{
+    width: 90%;
+    height: 600px;
+    position: absolute;
+    left: 0;
+    top: 20px;
+    background-color: red;
+    z-index: 22;
+}
+.front-card{
+    max-width: 500px;
+    height: 400px;
+    background-color: blue;
+    position: absolute;
+    bottom: 0px;
+    left: 30px;
+    z-index: 222;
+
 }
 @media screen {
     
