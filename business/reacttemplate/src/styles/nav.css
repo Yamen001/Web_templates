@@ -1,0 +1,75 @@
+nav{
+    width: 100%;
+    background-color: rgb(190, 190, 162);
+    padding: 10px 0;
+}
+nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .search{
+    border: 1px solid black;
+    display: flex;
+    background-color: blue;
+}
+nav .search input{
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+nav .search button{
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: white;
+    cursor: pointer;
+}
+nav .hamburger{
+    position: relative;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+nav .hamburger span{
+    width: 22px;
+    height: 2px;
+    background-color: black;
+}
+nav .Menu{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.548);
+    top: 0;
+    height: 100%;
+    transition: .4s ease;
+}
+.Menu.open{
+    left: 0;
+}
+.Menu.close{
+    left: -100%;
+}
+nav .Menu .list{ 
+    position: absolute;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.726);
+    padding: 20px;
+    height: 100%;
+}
+nav .Menu .list button{
+    margin:  0 0 0 90%;
+    padding: 6px;
+    cursor: pointer;
+}
+nav .Menu .list ul li{
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
