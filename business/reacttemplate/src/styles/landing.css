@@ -1,0 +1,65 @@
+.landing{
+    min-height: 100vh;
+    background-image: url(../imgs/landing.jpg);
+    background-size: cover;
+    background-position: top;
+    padding: 100px 0 0 0;
+}
+.landing .container{
+    display: flex;
+    /* background-color: red; */
+    height: 100%;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.landing .container > div{
+    /* background-color: #ccc; */
+}
+.landing .container .intro-text{
+    max-width: 600px;
+    width: 100%;
+    padding: 15px;
+    /* background-color: yellow; */
+}
+.landing .container .intro-text h1{
+    font-size: 3.2rem;
+    color: white;
+}
+.landing .container .intro-text h3{
+    color: white;
+    margin: 20px 0 10px;
+}
+.landing .container .intro-text p{
+    color: white;
+}
+.landing .container .form{
+    max-width: 450px;
+    width: 100%;
+    padding: 30px;
+    background-color: rgb(98, 82, 247);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.landing .container .form textarea{
+    max-height: 200px;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 200px;
+    padding: 10px;
+}
+.landing .container .form input{
+    padding: 10px;
+    width: 100%;
+}
+.landing .container .form button{
+    width: 100px;
+}
+.landing .form button{
+    padding: 10px;
+    font-weight: bold;
+}

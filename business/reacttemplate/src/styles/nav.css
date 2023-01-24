@@ -1,7 +1,12 @@
 nav{
     width: 100%;
-    background-color: rgb(190, 190, 162);
+    /* background-color: rgb(190, 190, 162); */
     padding: 10px 0;
+    border-bottom: 1px solid #aaa;
+    /* position: fixed; */
+    /* top: 0; */
+    background-color: white;
+    /* left: 0; */
 }
 nav .container{
     display: flex;
@@ -9,7 +14,7 @@ nav .container{
     align-items: center;
 }
 nav .search{
-    border: 1px solid black;
+    border: 1px solid #aaa;
     display: flex;
     background-color: blue;
 }
@@ -40,7 +45,7 @@ nav .hamburger{
 nav .hamburger span{
     width: 22px;
     height: 2px;
-    background-color: black;
+    background-color: #aaa;
 }
 nav .Menu{
     position: absolute;
@@ -50,6 +55,7 @@ nav .Menu{
     top: 0;
     height: 100%;
     transition: .4s ease;
+    z-index: 100;
 }
 .Menu.open{
     left: 0;
@@ -60,16 +66,34 @@ nav .Menu{
 nav .Menu .list{ 
     position: absolute;
     width: 300px;
-    background-color: rgba(0, 0, 0, 0.726);
+    background-color: rgb(0, 0, 0);
     padding: 20px;
     height: 100%;
+    z-index: 100;
 }
 nav .Menu .list button{
     margin:  0 0 0 90%;
+    border: none;
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    font-size: 2rem;
     padding: 6px;
     cursor: pointer;
 }
 nav .Menu .list ul li{
     margin: 20px 0;
+    padding: 0 20px;
     font-size: 1.2rem;
+    color: white;
+    transition: .5s ease;
+}
+nav .Menu .list ul li:hover{
+    padding: 0 0 0 40px;
+}
+nav .Menu .list ul li a{
+    color: white;
+}
+nav i {
+    color: #aaa;
 }

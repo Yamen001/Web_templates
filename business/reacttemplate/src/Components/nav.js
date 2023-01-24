@@ -1,7 +1,6 @@
 import React from "react";
+// import { Component } from "react";
 import "../styles/nav.css"
-let menu = document.querySelector("nav .Menu")
-console.log(menu)
 export default function Navbar(){
     return(
         <nav>
@@ -31,10 +30,12 @@ export default function Navbar(){
     )
 }
 function openMenu(){
+    let menu = document.querySelector("nav .Menu")
     menu.classList.remove("close")
     menu.classList.add("open")
 }
 function closeMenu(){
+    let menu = document.querySelector("nav .Menu")
     menu.classList.remove("oepn")
     menu.classList.add("close")
 }
