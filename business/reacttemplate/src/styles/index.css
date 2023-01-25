@@ -1,5 +1,6 @@
 /* start global rules */
 :root{
+  --purple-color:#4767c9;
 }
 *{
   box-sizing: border-box;
@@ -18,6 +19,7 @@ a{
 }
 body{
   font-family:  sans-serif;
+  height: 200vh;
   /* overflow: hidden; */
 }
 .container{
