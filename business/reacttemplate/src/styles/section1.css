@@ -1,0 +1,44 @@
+.active{
+    padding: 10px;
+    position: relative;
+}
+.active::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    width: 3px;
+    height: 100%;
+    left: -10px;
+    background-color: var(--purple-color);
+    animation: borderBefore;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.active::after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    width: 3px;
+    height: 100%;
+    right: -10px;
+    background-color: var(--purple-color);
+    animation: borderAfter;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes borderBefore {
+    0%{
+        left: -10px;
+    }
+    100%{
+        left: 0px;
+    }
+}
+@keyframes borderAfter {
+    0%{
+        right: -10px;
+    }
+    100%{
+        right: 0px;
+    }
+}
