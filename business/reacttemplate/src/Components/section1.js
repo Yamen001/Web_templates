@@ -1,7 +1,8 @@
 import { useState , react } from "react";
 import "../styles/section1.css"
 export default function Sec1(){
-    let text = ["yamen","majd","ahmed"]
+    let text = ["Sample text. Click to select the text box. Click again or double click to start editing the text. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. In iaculis nunc sed augue lacus viverra vitae congue eu. Nunc vel risus commodo viverra maecenas accumsan lacus. Egestas dui id ornare arcu odio ut. Sample text. Click to select the text box. Click again or double click to start editing the text. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. In iaculis nunc sed augue lacus viverra vitae congue eu. Nunc vel risus commodo viverra maecenas accumsan lacus. Egestas dui id ornare arcu odio ut."
+    ,"Sample text. Click to select the text box. Click again or double click to start editing the text. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. In iaculis nunc sed augue lacus viverra vitae congue eu. ","Click again or double click to start editing the text. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. In iaculis nunc sed augue lacus viverra vitae congue eu. Nunc vel risus commodo viverra maecenas accumsan lacus. Egestas dui id ornare arcu odio ut."]
     const [text1,setText] = useState(0)
     function btnbackground(num){
         document.querySelectorAll(".Sec1 .container .buttons button").forEach(function(ele,index){

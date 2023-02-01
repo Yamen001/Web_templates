@@ -1,6 +1,22 @@
+.Sec1{
+    min-height: 60vh;
+    /* background-color: red; */
+    padding: 40px 0;
+}
+.Sec1 .buttons{
+    display: flex;
+    gap: 20px;
+}
+.Sec1 .buttons button{
+    padding: 2px 10px;
+    font-size: 1.4rem;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
 .active{
-    padding: 10px;
     position: relative;
+    color: var(--purple-color);
 }
 .active::before{
     content: "";
@@ -11,7 +27,7 @@
     left: -10px;
     background-color: var(--purple-color);
     animation: borderBefore;
-    animation-duration: 1s;
+    animation-duration: .5s;
     animation-fill-mode: forwards;
 }
 .active::after{
@@ -23,7 +39,7 @@
     right: -10px;
     background-color: var(--purple-color);
     animation: borderAfter;
-    animation-duration: 1s;
+    animation-duration: .5s;
     animation-fill-mode: forwards;
 }
 @keyframes borderBefore {
@@ -42,3 +58,14 @@
         right: 0px;
     }
 }
+.Sec1 .Text{
+    padding: 15px 17px;
+    min-height: 25vh;
+    margin: 20px 0;
+    font-size: 1rem;
+    line-height: 1.7;
+    /* background-color: red; */
+}
+/* add class active on scroll */
+/* change min heigth of Text in small screens */
+/* change the higth of products cards on small screens , ant intro text */
