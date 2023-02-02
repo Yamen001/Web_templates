@@ -3,6 +3,7 @@ import Navbar from './Components/nav';
 import Landing from './Components/landing';
 import Products from './Components/products';
 import Sec1 from './Components/section1';
+import Team from './Components/team';
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       <Landing />
       <Products />
       <Sec1/>
-      {/* <Team /> */}
+      <Team />
       {/* <Gallart /> */}
     </div>
   );

@@ -12,6 +12,7 @@ const productsdata =
         }
         ,
         {
+            
             text:"Validate ideas with an interactive prototype of your vision",
             title:"Prototype an idea",
         }

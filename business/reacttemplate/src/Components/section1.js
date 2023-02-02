@@ -21,17 +21,29 @@ export default function Sec1(){
         <section className="Sec1">
             <div className="container">
                 <div className="buttons">
-                    <button onClick={()=>{btnbackground(0)}} >Description</button>
+                    <button className="active" onClick={()=>{btnbackground(0)}} >Description</button>
                     <button onClick={()=>{btnbackground(1)}}>Specification</button>
                     <button onClick={()=>{btnbackground(2)}}>Reviews</button>
                 </div>
                 <div className="Text">{text[text1]}</div>
                 <ul className="details">
-                    <li><p>Pretium quam vulputate dignissim suspendisse.</p></li>
-                    <li><p>Rutrum tellus pellentesque eu tincidunt tortor aliquam nulla facilisi cras.</p></li>
-                    <li><p>Sed vulputate mi sit amet mauris commodo. Neque laoreet suspendisse interdum</p></li>
+                    <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" className="bi bi-check" viewBox="0 0 16 16">
+                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                    </svg>
+                        <span>Pretium quam vulputate dignissim suspendisse.</span></li>
+                    <li>
+                    <svg xmlns="http://www.w3.org/2000/svg"  className="bi bi-check" viewBox="0 0 16 16">
+                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                    </svg>
+                        <span>Rutrum tellus pellentesque eu tincidunt tortor aliquam nulla facilisi cras.</span></li>
+                    <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" className="bi bi-check" viewBox="0 0 16 16">
+                        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                    </svg>
+                    <span>Sed vulputate mi sit amet mauris commodo. Neque laoreet suspendisse interdum</span></li>
                 </ul>
-                <button>Learn More</button>
+                <button className="learnMore">Learn More</button>
             </div>
         </section>
     )

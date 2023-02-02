@@ -53,3 +53,12 @@ body{
 h1 , h2 , h3{
   margin: 0;
 }
+
+
+.intro-section-text{
+  text-align: center;
+  font-size: 1.5rem;
+  /* //////////////// */
+  max-width: 700px;
+  margin: 10px auto;
+}

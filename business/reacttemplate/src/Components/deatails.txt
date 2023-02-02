@@ -1,0 +1,17 @@
+Css)
+1) you can change the gap on y axis between elements when wraping
+using grid-row-gap even when you are using flex
+
+
+
+
+
+
+
+
+
+
+
+
+react)
+1) button onclick you call a function ...this function has many other functions

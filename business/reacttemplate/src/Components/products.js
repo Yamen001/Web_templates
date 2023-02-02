@@ -10,6 +10,7 @@ function Products(){
     const cards =productsdata.map((ele , index)=>{
         return <ProductCard product={ele} number={index+1} key={index}/>
     })
+    // it returns an array of cards
     return(
         <div className="Product-cards">
             <div className="container">
