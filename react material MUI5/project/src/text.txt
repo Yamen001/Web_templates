@@ -1,3 +1,31 @@
 xs=3 is like col-3
 we must contain our cards within a container then we use the grid system
 contaienr > Grid container > Grid item xs=3
+======================================
+
+
+Typography is used for the text
+variant ... means how i want the text
+i can use h1 h2..h6 ...subtitle1 subtitle2 , body1 , body2
+
+compoents tells how i wand the element to be shown in inspect
+see more in docs
+
+
+===========================================
+
+Box ...used to wrap the elements like the div
+
+add PaddingX={2} , PaddingY={3} , Padding={2}
+add marginLeft ={0.5}
+
+=========================================
+to wirte custom style i open sx={
+{    display:"flex",
+    alignItems:"center"}
+}
+
+
+to use icons in material we show install library that is
+relative to this library
+npm install @mui/icons-material
