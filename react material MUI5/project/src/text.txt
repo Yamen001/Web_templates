@@ -1,0 +1,3 @@
+xs=3 is like col-3
+we must contain our cards within a container then we use the grid system
+contaienr > Grid container > Grid item xs=3
