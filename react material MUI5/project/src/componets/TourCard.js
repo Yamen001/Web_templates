@@ -1,5 +1,5 @@
 import Paper from '@mui/material/Paper';
-import { Grid } from '@mui/material';
+import { Grid, Rating } from '@mui/material';
 import {Typography} from '@mui/material';
 import { Box } from '@mui/system';
 import { AccessTime } from '@mui/icons-material';
@@ -26,6 +26,36 @@ const TourCard = ()=>{
                             <Typography variant='body2' marginLeft={0.5}>
                                 5 hours
                             </Typography>
+                    </Box>
+                    <Box
+                        sx={{
+                            display:"flex",
+                            alignItems:"center"
+                        }}
+                        marginTop={3}
+                        >
+                        <Rating
+                            name="read-only"
+                            value={4.5}
+                            readOnly
+                            precision={0.5}
+                            size="small"
+                            />
+                        <Typography
+                            variant='body2' component="p" marginLeft={0.5}
+                        >
+                            4.5
+                        </Typography>
+                        <Typography
+                            variant='body2' component="p" marginLeft={1.5}>
+                            (6.55 reviews)
+                        </Typography>
+                    </Box>
+                    <Box>
+                        <Typography
+                            variant='h6' component="h3" marginTop={1.5}>
+                            From C $465
+                        </Typography>   
                     </Box>
                 </Box>
             </Paper>

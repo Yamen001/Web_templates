@@ -20,7 +20,8 @@ add PaddingX={2} , PaddingY={3} , Padding={2}
 add marginLeft ={0.5}
 
 =========================================
-to wirte custom style i open sx={
+to wirte custom style i open 
+sx=
 {    display:"flex",
     alignItems:"center"}
 }
