@@ -52,3 +52,8 @@ it is made of diffrents componets
 to formt in vs ctrl shift I
 you can easliy import local json data ... without fetching method
 
+========================================================
+to make mulitple page application...we use routes
+npm install react-router-dom
+
+/:id  =====> if we want a Dynaimc pages

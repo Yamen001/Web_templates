@@ -36,16 +36,16 @@ const theme = createTheme(
 
 // xs is like col-3
 
-const TourCard = ()=>{
+const TourCard = ({tour})=>{
     return(
         <Grid item xs={3}>
             <ThemeProvider theme={theme}>
                 <Paper elevation={3} >
-                    <img className='img' src='https://imgs.search.brave.com/nCtlXrUNXVJS691BYTNaOGW1Ocw4KupYkxTHcRKIr4U/rs:fit:640:446:1/g:ce/aHR0cHM6Ly9pbnNw/aXJlbGxlLmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvMjAxNi8w/NS9XZWJzaXRlLWlt/Zy5qcGc'
+                    <img className='img' src={tour.image}
                     alt='.33' />
-                    <Box paddingX={2}>
+                    <Box paddingX={1}>
                         <Typography  variant="subtitle1" component="h2">
-                            hello world from syria
+                            {tour.name}
                         </Typography>
                         <Box
                             sx={{
@@ -54,7 +54,7 @@ const TourCard = ()=>{
                             }}>
                                 <AccessTime sx={{width:12.5}} />
                                 <Typography variant='body2' marginLeft={0.5}>
-                                    5 hours
+                                    {tour.duration} hours
                                 </Typography>
                         </Box>
                         <Box
@@ -66,7 +66,7 @@ const TourCard = ()=>{
                             >
                             <Rating
                                 name="read-only"
-                                value={4.5}
+                                value={tour.rating}
                                 readOnly
                                 precision={0.5}
                                 size="small"
@@ -74,17 +74,17 @@ const TourCard = ()=>{
                             <Typography
                                 variant='body2' component="p" marginLeft={0.5}
                             >
-                                4.5
+                                {tour.raiing}
                             </Typography>
                             <Typography
                                 variant='body2' component="p" marginLeft={1.5}>
-                                (6.55 reviews)
+                                ({tour.numberOfReviews} reviews)
                             </Typography>
                         </Box>
                         <Box>
                             <Typography
                                 variant='h6' component="h3" marginTop={1.5}>
-                                From C $465
+                                From C {tour.price}
                             </Typography>   
                         </Box>
                     </Box>

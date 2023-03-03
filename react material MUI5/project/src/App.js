@@ -1,26 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
-import TourCard from './componets/TourCard';
-import { Container } from '@mui/system';
-import { Grid } from '@mui/material';
+import Home from './pages/Home';
 import SearchAppBar from './componets/AppBar';
-import data from './data.json'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Tour from './pages/Tour';
 
 function App() {
-  console.log(data);
   return (
-    <div className="App">
+    <BrowserRouter>
       <SearchAppBar />
-      <Container sx={{ marginY: 5 }} >
-        <Grid container spacing={5} >
-          <TourCard />
-          <TourCard />
-          <TourCard />
-          <TourCard />
-        </Grid>
-      </Container>
-    </div>
-  );
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/:id" element={<Tour />} />
+      </Routes>
+    </BrowserRouter>
+  )
+
 }
 
 export default App;
