@@ -30,3 +30,25 @@ sx=
 to use icons in material we show install library that is
 relative to this library
 npm install @mui/icons-material
+
+
+
+========================================================
+how to custommize our own style... with theme provider object
+
+after you make object theme ...you wrap 
+the elements that you want to see this theme..
+like apicontext provider
+the createTheme and ThemeProvider are from mul/material
+
+========================================================
+
+
+Appbar ==> is the navbar..
+when you see the code you will notice that
+it is made of diffrents componets
+
+========================================================
+to formt in vs ctrl shift I
+you can easliy import local json data ... without fetching method
+
