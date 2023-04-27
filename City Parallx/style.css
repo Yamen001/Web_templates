@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.wrapper{
+    /*~ important 100vh */
+    height: 100vh; 
+    perspective: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: rgb(3, 1, 35);
+}
+.header{
+    position: relative;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1111;
+
+
+}
+.moon{
+    position: absolute;
+    transform: translateZ(-8px) scale(1.8);
+    z-index: -1;
+    object-fit: cover;
+    height: 200px;
+    width: 200px;
+    /* top: 0; */
+    left: -200px;
+}
+.frontbuildigs-img{
+    position: absolute;
+    right: 0;
+    transform: translateZ(-5px) scale(1.7);
+    width: 100%;
+    object-fit: cover;
+    z-index: -3;
+    bottom: 130px;
+}
+.forest-img{
+    position: absolute;
+    right: 0;
+    transform: translateZ(-1px) scale(1.2);
+    width: 100%;
+    object-fit: contain;
+    z-index: -1;
+    filter: brightness(30%);
+    bottom: 0;
+}
+.text{
+    height: 100vh;
+    padding: 20px;
+    background-color: #0a53c0f5;
+    position: relative;
+    z-index: 11;
+    font-size: 2rem;
+}
